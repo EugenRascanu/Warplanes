@@ -1,9 +1,3 @@
-#Legend
-# X for ship placement and hit battleship
-# ' ' for available space
-# '-' for missed shot
-
-
 from random import randint
 
 HIDDEN_BOARD = [[' '] * 8 for x in range(8)]
