@@ -1,3 +1,18 @@
+#Legend
+# X for placing plane and hit warplane
+# ' ' for available space
+# '-' for missed shot
+# HIDDEN_BOARD - computers board with plane placement
+# GUESS_BOARD - the board that the player sees / plane placement is hidden from the player
+# randit - method that returns an integer number selected element from the specified range
+# board is 8x8 / row 1-8 / column A-H
+# random generated planes on board = 5
+# while row/column not in 1-8 + A-H = invalid data (player is asked to input correct data)
+# max turns = 10
+# current turn tells player how many tries he has left
+
+
+
 from random import randint
 
 HIDDEN_BOARD = [[' '] * 8 for x in range(8)]
@@ -55,7 +70,7 @@ create_ships(HIDDEN_BOARD)
 current_turn = 0
 max_turns = 10
 while current_turn < max_turns:
-    print('Welcome to Old School Battleship')
+    print('Welcome to Warplanes')
     print_board(GUESS_BOARD)
     row, column = get_ship_location()
     if not GUESS_BOARD[row][column] == ' ':
@@ -68,7 +83,7 @@ while current_turn < max_turns:
         continue
 
     if HIDDEN_BOARD[row][column] == 'X':
-        print('Congratulations, you have hit the battleship')
+        print('Congratulations, you have a warplane')
         GUESS_BOARD[row][column] = 'X'
         current_turn += 1
     else:
@@ -77,7 +92,7 @@ while current_turn < max_turns:
         current_turn += 1
 
     if count_hit_ships(GUESS_BOARD) == 5:
-        print('Congratulations, you have sunk all the battleships')
+        print('Congratulations. The warplanes are shot down. The sky is clear')
         break
 
     if current_turn == max_turns:
