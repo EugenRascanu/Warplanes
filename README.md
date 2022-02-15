@@ -48,7 +48,7 @@ The board is 8x8. Rows 1 to 8 and columns A to H. The player has 10 tries, befor
 
  ## Bugs
 
- * A line in the code block did not follow consistent indenting, thus getting a SyntaxError
+ * A line in the code block did not follow consistent indenting, thus generatingg a SyntaxError
 
  ![SyntaxError](/images/bug.png)
 
