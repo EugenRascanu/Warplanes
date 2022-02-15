@@ -65,4 +65,10 @@ The board is 8x8. Rows 1 to 8 and columns A to H. The player has 10 tries, befor
  ![Buildpacks](images/buildpacks.jpg)
 
  * The Heroku app has been linked to the repository 
- * Within Heroku, the app has been DEPLOYED
+ * Within Heroku, click on DEPLOY
+
+ ## Credits
+
+ * This project uses the [Code Institute student template](https://github.com/Code-Institute-Org/python-essentials-template) for deploying the third portfolio project, the Python command-line project.
+ * Code Institute's ["Ultimate Battleships"](https://p3-battleships.herokuapp.com) inspired the README section and ["Warplanes"](https://warplanes.herokuapp.com) app
+
