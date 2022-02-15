@@ -48,4 +48,21 @@ The board is 8x8. Rows 1 to 8 and columns A to H. The player has 10 tries, befor
 
  ## Bugs
 
- *
+ * A line in the code block did not follow consistent indenting, thus getting a SyntaxError
+
+ ![SyntaxError](/images/bug.png)
+
+ ## Remaining Bugs
+
+ * All bugs have been fixed prior deployment
+
+ ## Deployment Steps
+
+ * Code Institute Mock Terminal has been forked
+ * Create the Heroku app
+ * Buildpacks have been set, as per instructions
+
+ ![Buildpacks](images/buildpacks.jpg)
+
+ * The Heroku app has been linked to the repository 
+ * Within Heroku, the app has been DEPLOYED

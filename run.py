@@ -70,7 +70,7 @@ create_ships(HIDDEN_BOARD)
 current_turn = 0
 max_turns = 10
 while current_turn < max_turns:
-    print('Welcome to Warplanes')
+    print('Welcome to Old School Battleship')
     print_board(GUESS_BOARD)
     row, column = get_ship_location()
     if not GUESS_BOARD[row][column] == ' ':
@@ -83,7 +83,7 @@ while current_turn < max_turns:
         continue
 
     if HIDDEN_BOARD[row][column] == 'X':
-        print('Congratulations, you have hit a warplane')
+        print('Congratulations, you have hit the battleship')
         GUESS_BOARD[row][column] = 'X'
         current_turn += 1
     else:
@@ -92,7 +92,7 @@ while current_turn < max_turns:
         current_turn += 1
 
     if count_hit_ships(GUESS_BOARD) == 5:
-        print('Congratulations. The warplanes are shot down. The sky is clear')
+        print('Congratulations, you have sunk all the battleships')
         break
 
     if current_turn == max_turns:
@@ -100,7 +100,3 @@ while current_turn < max_turns:
         break
     else:
         print('You have ' + str(max_turns - current_turn) + ' turns remaining')
-    
-    if current_turn == max_turns:
-        print('Play again ? Y/N')
-        
