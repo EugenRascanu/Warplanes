@@ -83,7 +83,7 @@ while current_turn < max_turns:
         continue
 
     if HIDDEN_BOARD[row][column] == 'X':
-        print('Congratulations, you have a warplane')
+        print('Congratulations, you have hit a warplane')
         GUESS_BOARD[row][column] = 'X'
         current_turn += 1
     else:

@@ -7,4 +7,5 @@
 
 ## How to Play
 
-### In this version of the game, the objective is to shoot 5 warplanes out of the sky. When the player starts the app, he will be able to see the board, but not the warplane placement onto that board. The board is 8x8. Rows 1 to 8 and columns A to H. The player has 10 tries, before the game is over. Each new game starts, the planes are generated random onto the board. 
+In this version of the game, the objective is to shoot 5 warplanes out of the sky. When the player starts the app, he will be able to see the board, but not the warplane placement onto that board. 
+The board is 8x8. Rows 1 to 8 and columns A to H. The player has 10 tries, before the game is over. Each new game starts, the planes are generated random onto the board. 
