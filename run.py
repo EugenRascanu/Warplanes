@@ -100,3 +100,7 @@ while current_turn < max_turns:
         break
     else:
         print('You have ' + str(max_turns - current_turn) + ' turns remaining')
+    
+    if current_turn == max_turns:
+        print('Play again ? Y/N')
+        
