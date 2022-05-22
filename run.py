@@ -55,10 +55,10 @@ def get_row():
         try:
             value = int(input('Please enter a ship row 1-8: '))
         except ValueError:
-            print("Sorry, I didn't understand that.")
+            print("Sorry, you must enter a valid row.")
             continue
         if ((value < 1) or (value > 8)):
-            print("Sorry, I didn't understand that.")
+            print("Sorry, you must enter a valid row.")
             continue
         else:
             break
@@ -69,7 +69,7 @@ def get_column():
     while True:
         value = input('Please enter a ship column A-H: ')
         if ((not value) or (value.upper() not in 'ABCDEFGH')):
-            print("Sorry, I didn't understand that.")
+            print("Sorry, you must enter a valid column.")
             continue
         else:
             break
@@ -109,7 +109,7 @@ def main():
     current_turn = 0
     max_turns = 10
     while current_turn < max_turns:
-        print('Welcome to Old School Battleship')
+        print('Welcome to Warplanes')
         print_board(guess_board)
         row, column = get_ship_location()
         if not guess_board[row][column] == ' ':
@@ -122,7 +122,7 @@ def main():
             continue
 
         if hidden_board[row][column] == 'X':
-            print('Congratulations, you have hit the battleship')
+            print('Congratulations, you have hit the warplane')
             guess_board[row][column] = 'X'
             current_turn += 1
         else:
@@ -131,7 +131,7 @@ def main():
             current_turn += 1
 
         if count_hit_ships(guess_board) == 5:
-            print('Congratulations, you have sunk all the battleships')
+            print('Congratulations, you have destroyed all the warplanes')
             break
 
         if current_turn == max_turns:
@@ -150,4 +150,4 @@ def main():
 try:
     main()
 except KeyboardInterrupt:
-    print('Goodbye')
+    print('You have pressed CTRL+C. Program terminated.')
