@@ -41,8 +41,12 @@ The board is 8x8. Rows 1 to 8 and columns A to H. The player has 10 tries, befor
  ![Game Over](images/nomore.jpg)
 
  * UPDATED with "Try Again" after finishing the game. The player has the option to either start a new game, by pressing "y" or stop playing by pressing "n"
+   * If the player writes any other value other than "y" or "n", the program will ask for the correct value
 
  ![TryAgain](images/tryagain.png)
+
+ ![Retry](images/retry.png)
+
 
   * Python allows us to set up signal -handlers so when a particular signal arrives to our program we can have a behavior different from the default. 
     * For example when you run a program on the terminal and press Ctrl-C the default behavior is to quit the program.
